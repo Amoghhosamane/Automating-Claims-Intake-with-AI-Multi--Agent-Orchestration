@@ -1,96 +1,109 @@
 # AI Multi-Agent System for Automated FNOL Processing
+(Low-Code / No-Code Implementation using Microsoft Copilot Agents)
 
-## Overview
-Insurance companies receive thousands of FNOL (First Notice of Loss) emails every day.
-Manual processing is slow, inconsistent, and error-prone.
+## Project Summary
+This project implements an AI-driven multi-agent orchestration system to automate
+FNOL (First Notice of Loss) insurance claim intake using a low-code / no-code approach
+with Microsoft Copilot Agents.
 
-This project introduces an AI-powered multi-agent orchestration system that automates
-FNOL intake, analysis, and response generation to improve speed, accuracy, and customer
-experience.
+The solution leverages multiple specialized Copilot agents to validate claim data,
+assess damage severity, detect duplicate claims, estimate claim amounts, and generate
+automated email responses, significantly reducing manual processing effort.
+
+## Key Skills Demonstrated
+- Low-Code / No-Code AI Development
+- Microsoft Copilot Agents
+- AI Agent Orchestration
+- Process Automation
+- Natural Language Processing (NLP)
+- OCR-Based Document Processing
+- InsurTech Solutions
+- Enterprise Workflow Automation
 
 ---
 
-## Problem Statement
-Current FNOL processing suffers from multiple challenges:
+## Business Problem
+Insurance organizations receive high volumes of FNOL emails daily.
+Manual claim triage introduces:
 
-- Missing or incomplete claim information
-- Manual triage slowing down claim processing
+- Delays in claim processing
+- Incomplete or missing claim information
 - Inconsistent damage severity evaluation
-- Duplicate claims going undetected
-- Unpredictable and inaccurate claim estimations
+- Undetected duplicate claims
+- Poor customer experience
 
 ---
 
-## Solution
-We propose an AI Multi-Agent Orchestration framework where multiple specialized agents
-work collaboratively to process FNOL emails efficiently.
+## Solution Approach
+A modular multi-agent architecture built using Microsoft Copilot Agents,
+where each agent performs a specific FNOL processing task.
 
-### Agents Involved:
+### Copilot Agents Involved
 - Completeness Agent
-  - Validates whether all mandatory claim details are present
+  - Validates presence of mandatory FNOL fields using prompts and rules
 
 - Damage Severity Agent
-  - Analyzes claim descriptions or images to assess damage severity
+  - Classifies damage severity from textual descriptions or images
 
 - Duplicate Detection Agent
-  - Identifies repeated or fraudulent claims
+  - Identifies similar or duplicate claims using AI-based similarity matching
 
 - Estimation Agent
-  - Predicts claim amount using historical and contextual data
+  - Estimates claim amounts based on historical patterns and extracted data
 
 - Orchestrator Agent
-  - Aggregates results from all agents and generates summary reports
-  - Creates automated email responses
+  - Coordinates all agents and compiles structured claim summaries
+  - Generates automated customer and internal email responses
 
 ---
 
 ## System Workflow
-1. FNOL email is received
-2. Orchestrator assigns tasks to specialized agents
-3. Each agent processes its assigned responsibility
-4. Orchestrator compiles results into a structured claim summary
-5. Automated response emails are generated
+1. FNOL email ingestion
+2. OCR and text extraction (if required)
+3. Parallel execution of Copilot agents
+4. Aggregation and validation of agent outputs
+5. Automated response and reporting
 
 ---
 
-## Key Benefits
-- Automated FNOL intake and processing
-- Reduced human workload
-- Faster claim triage and response times
-- Improved accuracy and consistency
-- Better customer experience
+## Technology Stack
+- Microsoft Copilot Agents
+- Microsoft Power Platform (Power Automate, Power Apps)
+- Azure AI Services
+- OCR and document intelligence tools
+- Email automation connectors
+- Low-Code / No-Code orchestration workflows
 
 ---
 
-## Tech Stack (Suggested)
-- Python
-- Large Language Models (LLMs)
-- Multi-Agent Framework (LangGraph / CrewAI / AutoGen)
-- OCR for document parsing
-- Machine Learning models for estimation
-- Email automation APIs
+## Quantifiable Impact
+- Reduced FNOL triage time
+- Lower dependency on manual claim review
+- Improved data completeness and consistency
+- Faster customer communication
+- Scalable enterprise-ready solution
 
 ---
 
 ## Future Scope
-- Image-based damage assessment using Computer Vision
-- Fraud detection using anomaly detection models
-- Real-time dashboard for claim monitoring and analytics
-- Integration with insurance core systems
-- Multilingual FNOL processing
+- Integration with insurance core systems (Guidewire, Duck Creek)
+- Computer vision-based damage assessment
+- Fraud detection using anomaly detection
 - Human-in-the-loop validation for high-risk claims
-- Cloud-native scalable deployment
+- Multilingual FNOL processing
+- Cloud-scale deployment across regions
 
 ---
 
 ## Hackathon Value Proposition
-- Solves a real-world, high-volume insurance problem
-- Demonstrates practical use of AI multi-agent systems
-- Scalable and production-relevant design
-- Clear business impact and operational value
+- Real-world enterprise insurance use case
+- Demonstrates applied AI using low-code/no-code tools
+- Rapid development and scalability
+- Aligns with enterprise digital transformation goals
 
 ---
 
 ## Conclusion
-This project demonstrates how AI multi-agent orchestration can transform FNOL processing
-from a manual bottleneck into an intelligent, automated, and scalable workflow.
+This project demonstrates how low-code / no-code AI multi-agent orchestration using
+Microsoft Copilot Agents can modernize FNOL processing, delivering faster, more
+accurate, and scalable insurance workflows.
