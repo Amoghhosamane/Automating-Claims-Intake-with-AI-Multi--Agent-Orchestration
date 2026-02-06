@@ -11,13 +11,10 @@ Problem: Insurance companies receive thousands of FNOL (First Notice of Loss) em
 * Challenges include: No consistent damage severity evaluation
 5
 * Challenges include: Duplicate claims go unnoticed
-6
-* Challenges include: Unpredictable claim estimations
-7
-Opportunity: Use Al Multi-Agent Orchestration to automate FNOL intake.
-8
-Opportunity: Reduce human workload.
-9
-Opportunity: Improve accuracy.
+6 Challenges include: Unpredictable claim estimations
+7 Opportunity: Use Al Multi-Agent Orchestration to automate FNOL intake.
+8 Opportunity: Reduce human workload.
+9 Opportunity: Improve accuracy.
+
 10 Opportunity: Enhance customer experience.
 --- OCR End ---
