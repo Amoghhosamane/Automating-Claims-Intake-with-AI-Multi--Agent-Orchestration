@@ -1,51 +1,96 @@
-AI Multi-Agent System for Automated FNOL Processing
-Overview
+# AI Multi-Agent System for Automated FNOL Processing
 
-Insurance companies receive thousands of FNOL (First Notice of Loss) emails daily, making manual processing slow, error-prone, and costly.
-This project proposes an AI multi-agent orchestration system that collaboratively processes FNOL emails to accelerate claim handling, improve accuracy, and reduce human workload.
+## Overview
+Insurance companies receive thousands of FNOL (First Notice of Loss) emails every day.
+Manual processing is slow, inconsistent, and error-prone.
 
-Solution
+This project introduces an AI-powered multi-agent orchestration system that automates
+FNOL intake, analysis, and response generation to improve speed, accuracy, and customer
+experience.
 
-The system uses multiple specialized AI agents, each responsible for a specific task in the FNOL workflow:
+---
 
-Completeness Agent – Verifies whether all required claim details are present
+## Problem Statement
+Current FNOL processing suffers from multiple challenges:
 
-Damage Severity Agent – Assesses the severity of reported damage
+- Missing or incomplete claim information
+- Manual triage slowing down claim processing
+- Inconsistent damage severity evaluation
+- Duplicate claims going undetected
+- Unpredictable and inaccurate claim estimations
 
-Duplicate Detection Agent – Identifies and flags duplicate claims
+---
 
-Estimation Agent – Predicts claim amount based on available data
+## Solution
+We propose an AI Multi-Agent Orchestration framework where multiple specialized agents
+work collaboratively to process FNOL emails efficiently.
 
-Orchestrator Agent – Aggregates outputs from all agents and generates required emails and summaries
+### Agents Involved:
+- Completeness Agent
+  - Validates whether all mandatory claim details are present
 
-This collaborative approach enables faster, consistent, and more reliable claim processing.
+- Damage Severity Agent
+  - Analyzes claim descriptions or images to assess damage severity
 
-Problem Statement
+- Duplicate Detection Agent
+  - Identifies repeated or fraudulent claims
 
-Insurance FNOL processing faces several challenges:
+- Estimation Agent
+  - Predicts claim amount using historical and contextual data
 
-Missing or incomplete claim information
+- Orchestrator Agent
+  - Aggregates results from all agents and generates summary reports
+  - Creates automated email responses
 
-Manual triage leading to slow processing times
+---
 
-Lack of consistent damage severity evaluation
+## System Workflow
+1. FNOL email is received
+2. Orchestrator assigns tasks to specialized agents
+3. Each agent processes its assigned responsibility
+4. Orchestrator compiles results into a structured claim summary
+5. Automated response emails are generated
 
-Duplicate claims going unnoticed
+---
 
-Unpredictable and inaccurate claim estimations
+## Key Benefits
+- Automated FNOL intake and processing
+- Reduced human workload
+- Faster claim triage and response times
+- Improved accuracy and consistency
+- Better customer experience
 
-Opportunities
+---
 
-By leveraging AI Multi-Agent Orchestration, insurers can:
+## Tech Stack (Suggested)
+- Python
+- Large Language Models (LLMs)
+- Multi-Agent Framework (LangGraph / CrewAI / AutoGen)
+- OCR for document parsing
+- Machine Learning models for estimation
+- Email automation APIs
 
-Automate FNOL intake and initial claim assessment
+---
 
-Significantly reduce human workload
+## Future Scope
+- Image-based damage assessment using Computer Vision
+- Fraud detection using anomaly detection models
+- Real-time dashboard for claim monitoring and analytics
+- Integration with insurance core systems
+- Multilingual FNOL processing
+- Human-in-the-loop validation for high-risk claims
+- Cloud-native scalable deployment
 
-Improve claim accuracy and consistency
+---
 
-Enhance customer experience through faster responses
+## Hackathon Value Proposition
+- Solves a real-world, high-volume insurance problem
+- Demonstrates practical use of AI multi-agent systems
+- Scalable and production-relevant design
+- Clear business impact and operational value
 
-Impact
+---
 
-This system transforms FNOL handling from a manual bottleneck into an intelligent, scalable, and automated workflow, enabling insurers to process claims efficiently at scale.
+## Conclusion
+This project demonstrates how AI multi-agent orchestration can transform FNOL processing
+from a manual bottleneck into an intelligent, automated, and scalable workflow.
